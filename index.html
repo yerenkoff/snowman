@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Ссылка на favicon для страницы -->
+    <link rel="icon" type="image/jpg" href="snowmanico.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Снеговик</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Форма - непосредственно карточка с игрой -->
+    <form>
+        <!-- Название игры. Также этот заголовок будет оповещать о том, выйграл человек или проиграл -->
+        <h1 id="gameName">Снеговик</h1>
+        <!-- Картинка со снеговиком -->
+        <img src="snowman0.jpg" alt="">
+        <!-- Шифр с загаданным словом. Здесь человек видит сколько букв он уже угадал -->
+        <h2 id="cypher">******</h2>
+        <!-- Поле для ввода буквы -->
+        <input type="text" placeholder="?" maxlength="1" id="userInput">
+        <!-- Контейнер с кнопками для управления игрой -->
+        <div class="buttons">
+            <button id="checkButton">Проверить букву</button>
+            <button id="newButton">Новая игра</button>
+        </div>
+        <!-- Параграф с правилами. В процессе игры заменяется на строку с уже использованными игроком буквами -->
+        <p>Вводи букву и проверяй.<br> Тебе нужно угадать секретное слово!</p>
+    </form>
+    <!-- Встраивание скрипта происходит на самом дне тега body -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
